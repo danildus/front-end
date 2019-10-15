@@ -12,6 +12,6 @@ export class DemoService {
   constructor(private httpClient: HttpClient) { }
 
   public getStudents() {
-    return this.httpClient.get('http://localhost/myapp/src/api/index.php');
+    return this.httpClient.get('http://localhost/api/index.php');
   }
 }
