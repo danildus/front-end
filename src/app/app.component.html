@@ -8,12 +8,19 @@
 <body>
 
 <form action="http://localhost/myapp/src/api/add.php" method="post">
-  <p><input name="name"> <input name="specialization"> <input name="class"></p>
-  <p><input type="submit"></p>
+  <ul>
+    <li>
+      <h2>Add a new item to the database</h2>
+    </li>
+  <li> <label>Name:</label> <input name="name"></li>
+  <li> <label>Spec:</label> <input name="specialization"></li>
+  <li> <label>Class:</label> <input name="class"></li>
+  </ul>
+  <button class="submit" type="submit">Add to base</button>
 </form>
 
 </body>
-<!--<app-Students-detail [item]="currentItem"></app-Students-detail>-->
+
 <app-students-list> </app-students-list>
 
 </html>
